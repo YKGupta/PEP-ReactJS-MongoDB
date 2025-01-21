@@ -1,12 +1,12 @@
-import './App.css'
-import Header from './Day 06/Header'
+import './App.css';
+import Destructuring from './Day 07/Destructuring';
 
 function App() {
 	return (
 		<>
-			<Header />
+			<Destructuring name="Hemlo" email="hemlo@gmail.com" />
 		</>
-	)
+	);
 }
 
-export default App
+export default App;
