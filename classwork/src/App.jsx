@@ -1,10 +1,10 @@
 import './App.css';
-import Destructuring from './Day 07/Destructuring';
+import State from './Day 08/State';
 
 function App() {
 	return (
 		<>
-			<Destructuring name="Hemlo" email="hemlo@gmail.com" />
+			<State />
 		</>
 	);
 }
