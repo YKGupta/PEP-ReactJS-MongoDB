@@ -1,10 +1,10 @@
 import './App.css';
-import Form from './Day 09/Form';
+import ChartsExample from './Day 10/ChartsExample';
 
 function App() {
 	return (
 		<>
-			<Form />
+			<ChartsExample />
 		</>
 	);
 }
