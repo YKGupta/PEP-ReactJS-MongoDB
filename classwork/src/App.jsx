@@ -1,10 +1,14 @@
+import { useContext } from 'react';
 import './App.css';
-import ChartsExample from './Day 10/ChartsExample';
+import Context from './Day 11/Context';
 
 function App() {
+
+	const { name } = useContext(Context);
+
 	return (
 		<>
-			<ChartsExample />
+			My name is {name}
 		</>
 	);
 }
