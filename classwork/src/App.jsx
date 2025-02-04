@@ -1,15 +1,10 @@
-import { useContext } from 'react';
 import './App.css';
-import Context from './Day 11/Context';
+import Header from './Day 13/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-
-	const { name } = useContext(Context);
-
 	return (
-		<>
-			My name is {name}
-		</>
+		<Header />
 	);
 }
 
