@@ -1,10 +1,10 @@
 import './App.css';
-import Header from './Day 13/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import API2 from './Day 14/API2';
 
 function App() {
 	return (
-		<Header />
+		<API2 />
 	);
 }
 
