@@ -1,10 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import API2 from './Day 14/API2';
+import FormikYup from './Day 15/FormikYup';
 
 function App() {
 	return (
-		<API2 />
+		<FormikYup />
 	);
 }
 
