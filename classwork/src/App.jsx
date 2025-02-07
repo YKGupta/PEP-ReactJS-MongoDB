@@ -1,10 +1,17 @@
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import FormikYup from './Day 15/FormikYup';
+import Blog from './Day 16/Blog';
+import Post from './Day 16/Post';
 
-function App() {
+const App = () => {
 	return (
-		<FormikYup />
+		<Router>
+			<Link to='/blog'>Blog</Link>
+			<Routes>
+				<Route path='/blog' element={<Blog />} />
+				<Route path='/blog/:postID' element={<Post />} />
+			</Routes>
+		</Router>
 	);
 }
 
