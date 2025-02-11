@@ -1,17 +1,12 @@
-import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import './App.css';
-import Blog from './Day 16/Blog';
-import Post from './Day 16/Post';
+import Root from './Day 19/Root';
 
 const App = () => {
 	return (
 		<Router>
-			<Link to='/blog'>Blog</Link>
-			<Routes>
-				<Route path='/blog' element={<Blog />} />
-				<Route path='/blog/:postID' element={<Post />} />
-			</Routes>
-		</Router>
+			<Root />
+		</Router>		
 	);
 }
 
