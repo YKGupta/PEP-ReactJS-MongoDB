@@ -1,12 +1,23 @@
-import { Router } from 'react-router-dom';
+import { useState } from 'react';
 import './App.css';
-import Root from './Day 19/Root';
+import UseContextExample from './Day 21/useContextExample';
+import UseMemoExample from './Day 21/UseMemoExample';
 
 const App = () => {
+
+	const [ selectedHook, setSelectedHook ] = useState('useContext');
+
 	return (
-		<Router>
-			<Root />
-		</Router>		
+		<div>
+			<h2>Happy Valentine&apos;s Day</h2>
+			<label htmlFor="hook">Select your hook</label>
+			<select name="hook" id="hook" value={selectedHook} onChange={(ev) => setSelectedHook(ev.target.value)}>
+				<option value="useContext">useContext</option>
+				<option value="useMemo">useMemo</option>
+			</select>
+			<hr />
+			{ selectedHook === 'useContext' ? <UseContextExample /> : <UseMemoExample /> }
+		</div>
 	);
 }
 
